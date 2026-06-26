@@ -1,12 +1,12 @@
-# MultiClaw-Core 🦞
+# MultiClaw
 
-[![Core Quality Gate](https://github.com/AIML-Solutions/MultiClaw-core/actions/workflows/ci.yml/badge.svg)](https://github.com/AIML-Solutions/MultiClaw-core/actions/workflows/ci.yml)
+[![Core Quality Gate](https://github.com/AIML-Solutions/MultiClaw/actions/workflows/ci.yml/badge.svg)](https://github.com/AIML-Solutions/MultiClaw/actions/workflows/ci.yml)
 [![Website](https://img.shields.io/badge/site-live-0ea5e9)](https://aiml-solutions.github.io/multiclaw-frontend/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 
-**MultiClaw-Core** is the architecture + governance command layer for AIML Solutions.
+**MultiClaw** is the architecture and governance command layer for AIML Solutions' multi-agent framework.
 
-It defines how specialized departments (quant, mlflow, llm, blockchain, frontend, docs) operate with clear boundaries, measurable outputs, and cost-aware model routing.
+It defines how specialized departments (research intelligence, quant, ModelOps, cloud, docs, and public interfaces) operate with clear boundaries, measurable outputs, and cost-aware model routing.
 
 ## 🧭 Why this repository exists
 
@@ -17,15 +17,15 @@ MultiClaw avoids the common “single giant AI project” failure mode by separa
 - cross-repo release standards
 - reporting and decision hygiene
 
-## 🦞 Ecosystem map
+## Ecosystem map
 
-- [**MultiClaw-Core**](https://github.com/AIML-Solutions/MultiClaw-core)
-- [**MultiClaw-Quant-Tools**](https://github.com/AIML-Solutions/MultiClaw-quant-tools)
-- [**MultiClaw-MLFlow**](https://github.com/AIML-Solutions/MultiClaw-MLFlow)
+- [**MultiClaw**](https://github.com/AIML-Solutions/MultiClaw)
+- [**MultiClaw-Quant-Tools**](https://github.com/AIML-Solutions/MultiClaw-Quant-Tools)
+- [**IntelliClaw**](https://github.com/AIML-Solutions/IntelliClaw)
 - [**MultiClaw-Blockchain**](https://github.com/AIML-Solutions/multiclaw-blockchain)
 - [**MultiClaw-LLM**](https://github.com/AIML-Solutions/multiclaw-llm)
 - [**MultiClaw-Frontend**](https://github.com/AIML-Solutions/multiclaw-frontend)
-- [**MultiClaw-Public-Library**](https://github.com/AIML-Solutions/multiclaw-public-library)
+- [**MultiClaw-Public-Library**](https://github.com/AIML-Solutions/MultiClaw-Public-Library)
 - [**ProRepoAgentOps**](https://github.com/AIML-Solutions/ProRepoAgentOps)
 - [**SnorkelTools**](https://github.com/AIML-Solutions/SnorkelTools)
 

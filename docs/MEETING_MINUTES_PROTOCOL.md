@@ -25,7 +25,7 @@ For each major session date (`YYYY-MM-DD`):
 7. Validation evidence (deploy links, workflow runs, URLs)
 
 ## Naming conventions
-- Use professional display names in prose: `MultiClaw-Core`, `MultiClaw-Quant-Tools`, etc.
+- Use professional display names in prose: `MultiClaw`, `MultiClaw-Quant-Tools`, `IntelliClaw`, etc.
 - Keep URL slugs as actual repo paths.
 
 ## Cadence

@@ -10,7 +10,7 @@ Increase hiring/contract conversion odds by presenting a coherent, credible engi
 
 ## Priority 2 — Staggered repo releases
 Current staged visibility strategy:
-- Public: MultiClaw-Core, MultiClaw-Quant-Tools, MultiClaw-MLFlow, MultiClaw-Public-Library
+- Public: MultiClaw, MultiClaw-Quant-Tools, IntelliClaw, MultiClaw-Public-Library
 - Staggered: MultiClaw-Blockchain, MultiClaw-LLM, MultiClaw-Frontend (repo), plus complementary utilities
 
 Actions:

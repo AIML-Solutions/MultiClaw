@@ -1,10 +1,10 @@
-# Contributing to MultiClaw-Core
+# Contributing to MultiClaw
 
 ## Scope
 This repo is for architecture, governance, standards, and cross-repo operating policy.
 
 ## Before submitting
-- Confirm changes belong in **MultiClaw-Core** (not quant/mlflow/frontend/blockchain implementation repos).
+- Confirm changes belong in **MultiClaw** (not quant, frontend, blockchain, or other implementation repos).
 - Check for sensitive data.
 - Keep commits atomic and well-described.
 

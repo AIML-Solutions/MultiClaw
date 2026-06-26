@@ -1,125 +1,50 @@
-# MultiClaw Repository Topology (Display Names + URL Slugs)
+# MultiClaw Repository Topology
 
 ## Objective
-Separate concerns so each lane can evolve with focused permissions, CI, and ownership while still interoperating.
 
-> Naming convention: **Display names use caps** (e.g., `MultiClaw-MLFlow`) even when GitHub URL slugs remain lowercase.
+Keep the public AIML Solutions GitHub surface simple, credible, and easy to understand.
 
-## Recommended Repo Set
+`MultiClaw` is the multi-agent framework and operating model. `IntelliClaw` is the intelligence/research lane. Supporting repositories should use plain functional names instead of multiplying branded placeholders.
 
-## 1) `MultiClaw-Core`  
-GitHub path: `AIML-Solutions/MultiClaw-core`
-Scope:
-- OpenClaw orchestration patterns
-- Skill architecture patterns
-- Subagent segmentation and permission model
-- AgentOps/CloudFinOps governance docs
+## Target Public Set
 
-Suggested source from current workspace:
-- `projects/MultiClaw/docs/*`
-- shared architecture/reporting automation scripts
-- non-domain-specific skills templates
+| Target Repo | Role |
+| --- | --- |
+| `MultiClaw` | Framework, governance, architecture, public platform overview |
+| `IntelliClaw` | Research, OSINT, arXiv, job-market, market-close, and intelligence pipeline |
+| `quant-tools` | Quant engineering, LEAN workflows, options/greeks, market data pipelines |
+| `agent-tools` | MCP-style tools, CLI skills, repo audits, tool contracts |
+| `service-patterns` | Applied AI service examples: FastAPI, ML/RAG/anomaly patterns |
+| `cloud-infra` | Terraform, Kubernetes, AWS/cloud deployment examples |
+| `multiclaw-docs` | Public playbooks, architecture references, and documentation |
+| `aiml-solutions.com` | Website source and public credibility hub |
 
-## 2) `MultiClaw-Quant-Tools`  
-GitHub path: `AIML-Solutions/MultiClaw-quant-tools`
-Scope:
-- QuantConnect LEAN workflows
-- data pipelines, ingestion, validation
-- Postgres + Hasura + Qdrant quant stack
-- options greeks/pricing framework
-- blockchain quant lane (Hardhat, chain analysis)
+## Private Or Future-Later Repos
 
-Suggested source from current workspace:
-- `projects/quantconnect/*`
+| Repo | Decision |
+| --- | --- |
+| `LangChainTools` | Make private; extract strong examples into `agent-tools` later |
+| `LangChain01` | Make private or archive |
+| `MultiClaw-MLFlow` | Make private; possible future `MLClaw` only if the lane becomes substantial |
 
-## 3) `MultiClaw-Blockchain`  
-URL slug: `multiclaw-blockchain`
-Scope:
-- token-chain scanning and enrichment
-- smart contract testing/deploy workflows
-- blockchain API + MCP tool interfaces
+## Merge / Archive Candidates
 
-Suggested source from current workspace:
-- `projects/blockchain-lab/*`
+| Repo | Direction |
+| --- | --- |
+| `QCLeanWorkflows` | Merge useful material into `quant-tools` |
+| `QCLeanAlgos` | Merge useful material into `quant-tools` |
+| `ProRepoAgentOps` | Merge governance standards into `MultiClaw` or `multiclaw-docs` |
+| `OpenClawTools` | Merge into `agent-tools` or rename to `agent-research` if distinct |
+| `SnorkelTools` | Merge into `agent-tools` or rename to `agent-benchmarking` |
 
-## 4) `MultiClaw-MLFlow`  
-GitHub path: `AIML-Solutions/MultiClaw-MLFlow`
-Scope:
-- MLflow experiment tracking and model registry
-- PyTorch/HF training pipelines
-- dataset/version workflows
-- model promotion and evaluation gates
+## Why Simplify
 
-Suggested source from current workspace:
-- `projects/mlflow-lab/*`
+- Stronger brand recall.
+- Fewer placeholder-looking repos.
+- Easier LinkedIn and resume linking.
+- Less maintenance overhead.
+- Clearer public/private boundary.
 
-## 5) `MultiClaw-LLM`  
-URL slug: `multiclaw-llm`
-Scope:
-- LangChain/LangGraph agent engineering
-- model routing, benchmarks, and evaluation gates
-- internal LLM query engine APIs
+## Publishing Rule
 
-Suggested source from current workspace:
-- `projects/llm-dept/*`
-
-## 6) `MultiClaw-Frontend`  
-URL slug: `multiclaw-frontend`
-Scope:
-- Next.js dashboards and visualization products
-- options/greeks and crypto analytics UX
-- PDF/report rendering surfaces
-
-Suggested source from current workspace:
-- `projects/frontend-studio/*`
-
-## 7) `MultiClaw-Public-Library`  
-URL slug: `multiclaw-public-library`
-Scope:
-- living technical documentation and onboarding assets
-- architecture playbooks, examples, and stack guides
-
-Suggested source from current workspace:
-- `projects/multiclaw-public-library/*`
-
-## 8) `ProRepoAgentOps`
-Scope:
-- cross-repo operational discipline
-- quality gates, release policy, and execution hygiene
-- deployment/automation oversight patterns
-
-## 9) `SnorkelTools`
-Scope:
-- specialized utilities and support tooling
-- reusable helpers for data/agentic workflows
-
-## 10) (Optional later) `MultiClaw-CloudFinOps`
-Scope:
-- cloud cost telemetry
-- runtime policy, budgets, rightsizing automation
-- infra efficiency playbooks
-
-## Why split this way
-- Narrow-scoped permissions per repo
-- Cleaner CI/CD and release boundaries
-- Easier contributor specialization
-- Lower blast radius for secrets and pipeline changes
-
-## Branching baseline
-- `main` protected
-- short-lived feature branches
-- PR checks required for merge
-
-## Minimum CI per repo
-- lint + tests
-- secret scanning
-- dependency scan
-- container/image checks where relevant
-
-## Migration pattern
-1. Create empty GitHub repos (private/public as staged)
-2. Initialize local git in each project lane
-3. Add `.gitignore` tuned per lane
-4. Commit baseline scaffold
-5. Push to GitHub
-6. Add CODEOWNERS + branch protections
+Only publicize repos that have a clear purpose, readable README, safe public content, and a path to validation. Everything else can remain private until it strengthens the story.
