@@ -19,15 +19,25 @@ MultiClaw avoids the common “single giant AI project” failure mode by separa
 
 ## Ecosystem map
 
-- [**MultiClaw**](https://github.com/AIML-Solutions/MultiClaw)
-- [**MultiClaw-Quant-Tools**](https://github.com/AIML-Solutions/MultiClaw-Quant-Tools)
-- [**IntelliClaw**](https://github.com/AIML-Solutions/IntelliClaw)
-- [**MultiClaw-Blockchain**](https://github.com/AIML-Solutions/multiclaw-blockchain)
-- [**MultiClaw-LLM**](https://github.com/AIML-Solutions/multiclaw-llm)
-- [**MultiClaw-Frontend**](https://github.com/AIML-Solutions/multiclaw-frontend)
-- [**MultiClaw-Public-Library**](https://github.com/AIML-Solutions/MultiClaw-Public-Library)
-- [**ProRepoAgentOps**](https://github.com/AIML-Solutions/ProRepoAgentOps)
-- [**SnorkelTools**](https://github.com/AIML-Solutions/SnorkelTools)
+- [**MultiClaw**](https://github.com/AIML-Solutions/MultiClaw) - operating model, release gates, and cross-repo coordination
+- [**QuantTools**](https://github.com/AIML-Solutions/QuantTools) - quant research, LEAN workflows, ingestion, and validation paths
+- [**IntelliClaw**](https://github.com/AIML-Solutions/IntelliClaw) - configurable research-monitoring and signal-triage pipeline
+- [**AgentTools**](https://github.com/AIML-Solutions/AgentTools) - reusable agent skills and MCP-facing workflow utilities
+- [**CloudInfra**](https://github.com/AIML-Solutions/CloudInfra) - infrastructure patterns and deployment scaffolding
+- [**MultiClaw-Public-Library**](https://github.com/AIML-Solutions/MultiClaw-Public-Library) - public notes, reports, and reusable portfolio assets
+- [**SnorkelTools**](https://github.com/AIML-Solutions/SnorkelTools) - weak-supervision and labeling workflow experiments
+
+## Implementation status
+
+| Area | Status | Notes |
+| --- | --- | --- |
+| Operating model | Active | Scope, departments, roadmap, and routing docs are maintained under `docs/` |
+| Release discipline | Active | CI, PR template, release template, changelog, and contribution rules are present |
+| Reporting cadence | Active | `reports/` contains dated technical briefings and meeting-minutes templates |
+| Automation | Active | Snapshot capture script is included under `scripts/` |
+| Quant integration | Scaffold | LEAN setup notes and compose scaffold are present; working quant implementation lives in `QuantTools` |
+
+MultiClaw is intentionally documentation-and-governance heavy. The implementation work is distributed across the specialist repos listed above.
 
 ## 📚 Core documents
 
