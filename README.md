@@ -64,6 +64,7 @@ MultiClaw is intentionally documentation-and-governance heavy. The implementatio
 - [`docs/SERVICE-PACKAGES.md`](docs/SERVICE-PACKAGES.md)
 - [`docs/REPO_TOPOLOGY.md`](docs/REPO_TOPOLOGY.md)
 - [`docs/AGENT_MODEL_ROUTING.md`](docs/AGENT_MODEL_ROUTING.md)
+- [`docs/MODEL-ROUTING-POLICY.md`](docs/MODEL-ROUTING-POLICY.md)
 - [`docs/HARNESS-ENGINEERING.md`](docs/HARNESS-ENGINEERING.md)
 - [`docs/QUALITY-GATE.md`](docs/QUALITY-GATE.md)
 - [`docs/ROADMAP.md`](docs/ROADMAP.md)
